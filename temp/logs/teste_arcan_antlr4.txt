@@ -1,0 +1,63 @@
+my_arcan$ arcan analyze -i temp/antlr4 -p antlr -o temp/ --all -l JAVA
+20:13:48 [main] INFO  c.a.t.AnalyseCommand - Using in-memory database.
+Loading native lib linux/x86_64/lib_lightgbm.so
+Extracting native lib /tmp/lib_lightgbm.so
+Copied 5504976 bytes
+Extracted file: exists=true path=/tmp/lib_lightgbm.so
+Loading native lib linux/x86_64/lib_lightgbm_swig.so
+Extracting native lib /tmp/lib_lightgbm_swig.so
+Copied 154167 bytes
+Extracted file: exists=true path=/tmp/lib_lightgbm_swig.so
+20:13:57 [main] INFO  c.a.d.v.GitVersionControlSystem - Active branch set to 'dev' from null.
+20:13:57 [main] INFO  c.a.a.ProjectVersioningManager - Version control system of 'antlr' set to com.arcan.data.vcs.GitVersionControlSystem
+20:13:57 [main] WARN  c.a.d.v.GitVersionControlSystem - Remote URL was not provided.
+20:13:57 [main] INFO  c.a.a.ProjectVersioningManager - Discovering non-analysed versions using class com.arcan.data.ves.LastVersionEnumerationStrategy
+20:14:08 [main] INFO  c.a.a.ProjectVersioningManager - 1 non-analyzed versions discovered.
+20:14:09 [main] INFO  c.a.a.Arcan - Saved project 'antlr' and '1' versions to database.
+20:14:09 [main] WARN  c.a.d.v.GitVersionControlSystem - Remote URL was not provided.
+20:14:09 [main] INFO  c.a.a.ProjectVersioningManager - Discovering non-analysed versions using class com.arcan.data.ves.LastVersionEnumerationStrategy
+20:14:17 [main] INFO  c.a.a.ProjectVersioningManager - 1 non-analyzed versions discovered.
+20:14:17 [main] INFO  c.a.a.ProjectAnalysis - Analysing 1 new versions. Total versions in antlr: 1
+20:14:17 [main] INFO  c.a.a.ProjectAnalysis - Analysing version '1-832b2024' (1/1)
+20:14:18 [main] INFO  c.a.m.GraphBuilder - Source files count: 521
+20:14:29 [main] INFO  c.a.m.GraphBuilder - Model built. Scanning for dependencies.
+20:14:47 [main] INFO  c.a.m.GraphBuilder - Building the dependency graph took 29 seconds: tinkergraph[vertices:565 edges:5165]
+20:14:47 [main] INFO  c.a.a.VersionAnalysis - Graph of this version: 521 units, 44 containers
+20:14:47 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'InstabilityMetric'
+20:14:48 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'TotalAmountOfChanges'
+20:14:48 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'filePathReal'
+20:14:48 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'FanOut'
+20:14:48 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'LinesOfCode'
+20:14:49 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'AbstractnessMetric'
+20:14:49 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'FanIn'
+20:14:49 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'NumberOfChildren'
+20:14:49 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'ChangeHasOccurred'
+20:14:49 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'PageRank'
+20:14:50 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'IsNested'
+20:14:52 [main] INFO  c.a.p.a.ArchitecturalSmellDetectionProcessor - CD detector found 357 smells.
+20:14:52 [main] INFO  c.a.p.a.ArchitecturalSmellDetectionProcessor - GC detector found 1 smells.
+20:14:52 [main] INFO  c.a.p.a.ArchitecturalSmellDetectionProcessor - HL detector found 4 smells.
+20:14:52 [main] INFO  c.a.p.a.ArchitecturalSmellDetectionProcessor - UD detector found 1 smells.
+20:14:52 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'Shape'
+20:14:52 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'MeanContTreeDistance'
+20:14:52 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'StDContTreeDistance'
+20:14:53 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'InstabilityGap'
+20:14:53 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'Strength'
+20:14:53 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'Size'
+20:14:53 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'AfferentAffectedRatio'
+20:14:53 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'AffectedComponentType'
+20:14:53 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'NumberOfEdges'
+20:14:53 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'StDContTreeDepth'
+20:14:55 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'CentralComponent'
+20:14:55 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'AffectedClassesRatio'
+20:14:55 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'AffectedConstructType'
+20:14:55 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'EfferentAffectedRatio'
+20:14:55 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'MeanContTreeDepth'
+20:14:56 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'LOCDensity'
+20:14:56 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'PageRankWeighted'
+20:14:56 [main] INFO  c.a.p.m.VersionMetricProcessor - Calculating metric 'TotalNumberOfChanges'
+20:14:56 [main] INFO  c.a.p.a.ATDFactor - Calculating 'ATDI'
+20:14:56 [main] INFO  c.a.p.a.ATDFactor - Calculating 'ATDI_WEIGHTED'
+20:14:59 [main] INFO  c.a.a.ProjectAnalysis - Analysis completed.
+20:14:59 [main] INFO  c.a.a.ProjectAnalysis - Versions analysed successfully: 1/1
+20:14:59 [main] INFO  c.a.a.ProjectAnalysis - Elapsed time: 0 minutes 41 seconds 
